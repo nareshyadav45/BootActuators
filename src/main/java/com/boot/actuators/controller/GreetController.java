@@ -1,0 +1,13 @@
+package com.boot.actuators.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GreetController {
+
+	@GetMapping("/Greet")
+	public String greet() {
+		return "Good Evening from Actuators..";
+	}
+}
